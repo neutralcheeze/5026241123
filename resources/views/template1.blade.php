@@ -21,7 +21,7 @@
             <a class="nav-link active" href="/pegawai">Pegawai</a>
           </li>
          <li class="nav-item">
-            <a class="nav-link" href="#">Nama tabel PR</a>
+            <a class="nav-link" href="/modem">Modem</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Siswa</a>
