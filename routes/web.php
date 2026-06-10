@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DosenController;
+use App\Http\Controllers\ModemController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
 use Illuminate\Support\Facades\Route;
@@ -75,3 +76,12 @@ Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+// ModemController
+Route::get('/modem', [ModemController::class, 'index']);
+Route::get('/modem/tambah', [ModemController::class, 'tambah']);
+Route::post('/modem/store', [ModemController::class, 'store']);
+Route::get('/modem/edit/{id}', [ModemController::class, 'edit']);
+Route::post('/modem/update', [ModemController::class, 'update']);
+Route::get('/modem/hapus/{id}', [ModemController::class, 'hapus']);
+Route::get('/modem/cari', [ModemController::class, 'cari']);
