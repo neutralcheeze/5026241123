@@ -4,8 +4,11 @@
   <title>5026241123 Achmad Zulfikar El farrel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
@@ -24,13 +27,13 @@
             <a class="nav-link" href="/modem">Modem</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Siswa</a>
+            <a class="nav-link" href="{{ route('siswa.index') }}">Siswa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/keranjangbelanja">D4</a>
+            <a class="nav-link" href="/keranjangbelanja">PR 2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/nilaikuliah">E5</a>
+            <a class="nav-link" href="/nilaikuliah">PR 3</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">EAS</a>
