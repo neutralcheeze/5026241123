@@ -27,10 +27,10 @@
             <a class="nav-link" href="#">Siswa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Latihan 1</a>
+            <a class="nav-link" href="/keranjangbelanja">D4</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Latihan 2</a>
+            <a class="nav-link" href="/nilaikuliah">E5</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">EAS</a>

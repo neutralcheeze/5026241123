@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DosenController;
+use App\Http\Controllers\KeranjangBelanjaController;
 use App\Http\Controllers\ModemController;
+use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
 use Illuminate\Support\Facades\Route;
@@ -85,3 +87,14 @@ Route::get('/modem/edit/{id}', [ModemController::class, 'edit']);
 Route::post('/modem/update', [ModemController::class, 'update']);
 Route::get('/modem/hapus/{id}', [ModemController::class, 'hapus']);
 Route::get('/modem/cari', [ModemController::class, 'cari']);
+
+// KeranjangBelanjaController
+Route::get('/keranjangbelanja', [KeranjangBelanjaController::class, 'index']);
+Route::get('/keranjangbelanja/tambah', [KeranjangBelanjaController::class, 'tambah']);
+Route::post('/keranjangbelanja/store', [KeranjangBelanjaController::class, 'store']);
+Route::get('/keranjangbelanja/hapus/{id}', [KeranjangBelanjaController::class, 'hapus']);
+
+// NilaiKuliahController
+Route::get('/nilaikuliah', [NilaiKuliahController::class, 'index']);
+Route::get('/nilaikuliah/tambah', [NilaiKuliahController::class, 'tambah']);
+Route::post('/nilaikuliah/store', [NilaiKuliahController::class, 'store']);
