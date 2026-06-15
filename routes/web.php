@@ -8,6 +8,7 @@ use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\TagihanController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -107,3 +108,9 @@ Route::get('/keranjangbelanja/hapus/{id}', [KeranjangBelanjaController::class, '
 Route::get('/nilaikuliah', [NilaiKuliahController::class, 'index']);
 Route::get('/nilaikuliah/tambah', [NilaiKuliahController::class, 'tambah']);
 Route::post('/nilaikuliah/store', [NilaiKuliahController::class, 'store']);
+
+// EAS
+Route::get('/eas', [TagihanController::class, 'index'])->name('eas.index');
+Route::get('/eas/tambah', [TagihanController::class, 'tambah'])->name('eas.tambah');
+Route::post('/eas/store', [TagihanController::class, 'store'])->name('eas.store');
+
